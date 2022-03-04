@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import uuid from "react-uuid";
 import AddIcon from "@mui/icons-material/Add";
 import Fab from "@mui/material/Fab";
 import Zoom from "@mui/material/Zoom";
@@ -6,6 +7,7 @@ import ClickAwayListener from "@mui/material/ClickAwayListener";
 
 function CreateArea(props) {
   const [input, changeInput] = useState({
+    id: "",
     title: "",
     content: "",
   });
@@ -23,8 +25,9 @@ function CreateArea(props) {
   }
 
   function handleAdd(event) {
+    input.id = uuid();
     props.onAdd(input);
-    changeInput({ title: "", content: "" });
+    changeInput({ id: "", title: "", content: "" });
     event.preventDefault();
   }
 
