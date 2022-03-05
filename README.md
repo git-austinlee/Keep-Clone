@@ -21,6 +21,13 @@ A simple clone of Google's Keep app. Created using React.js.
 
 ![add multiple notes](https://thumbs.gfycat.com/WiltedEcstaticAllensbigearedbat-size_restricted.gif)
 
+## Edit a note
+
+- Clicking a note will bring up a modal with editable text areas
+- Clicking out of the modal will save the edit
+
+![edit note](https://thumbs.gfycat.com/WellwornDisloyalAntlion-size_restricted.gif)
+
 ## Delete a note.
 
 - Deleting a note does not delete other notes.
